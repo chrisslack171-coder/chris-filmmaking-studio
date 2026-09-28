@@ -1,0 +1,5 @@
+interface:
+  display_name: "Chris Filmmaking Studio"
+  short_description: "Characters, VHS stories, and live-quoted API films"
+  default_prompt: "Use $chris-filmmaking-studio to plan a character-driven scene and quote its Higgsfield API cost."
+
