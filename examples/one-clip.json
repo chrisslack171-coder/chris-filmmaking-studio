@@ -1,0 +1,15 @@
+{
+  "jobs": [
+    {
+      "label": "Coastal road",
+      "model": "bytedance/seedance-2.0/text-to-video",
+      "input": {
+        "prompt": "A cinematic tracking shot along a sunlit coastal road",
+        "resolution": "720p",
+        "generate_audio": true,
+        "duration": 5,
+        "aspect_ratio": "16:9"
+      }
+    }
+  ]
+}
