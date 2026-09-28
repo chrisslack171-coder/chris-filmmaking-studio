@@ -186,7 +186,7 @@ class StudioTests(unittest.TestCase):
         with urllib.request.urlopen(url) as response:
             page = response.read().decode()
             self.assertIn('type="password"', page)
-            self.assertEqual(response.headers["Cache-Control"], "no-store")
+            self.assertEqual((response.headers["Cache-Control"], response.headers["Referrer-Policy"]), ("no-store", "same-origin"))
         payload = b"key=fixture-id%3Afixture-secret"
         bad = urllib.request.Request(url, data=payload, headers={"Origin": "https://evil.example"})
         with self.assertRaises(urllib.error.HTTPError) as caught:
